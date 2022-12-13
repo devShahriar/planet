@@ -10,8 +10,9 @@ import (
 )
 
 var latlon2h3 = &cobra.Command{
-	Use:   "latlon2h3",
-	Short: "latlon2h3",
+	Use:     "latlon2h3",
+	Short:   "latlon2h3",
+	Example: "planet conv latlon2h3 --lat <latitude> --lon <longitude> -r <resolution>",
 	Run: func(cmd *cobra.Command, args []string) {
 
 		input := contract.GetInputPayload()
